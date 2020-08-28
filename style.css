@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+    background-color: rgb(7, 7, 7);
+}
+
+.btn-primary{
+    background: linear-gradient(rgb(219, 215, 215), rgb(87, 86, 86));
+}
+
+
+.btn-primary:hover
+{
+background: black;
+}
+
+.btn{
+    padding: 5%;
+    margin-top: 10vh;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: large;
+    color: rgb(0, 0, 0);
+    transition: all 1s;
+}
+
+.btn:hover
+{
+    
+    color:rgb(255, 255, 255)
+    
+}
+
+.title-text{
+    text-transform: uppercase;
+}
+
+#page-header{
+    min-height: 100vh;
+}
+
+.paragraph{
+    font-size: larger;
+    line-height: 35px;
+}
+
+section {
+    padding: 50px;
+}
+
+footer{
+    font-family:cursive;
+        background: linear-gradient(rgb(175, 174, 174), rgb(43, 43, 43));
+}
+
+#about-section {
+    background: linear-gradient(rgb(255, 255, 255), rgb(131, 131, 131));
+}
+
+#portfolio {
+    background: linear-gradient(rgba(49, 49, 49, 0.697), rgba(0, 0, 0, 0.293)) , url(./img/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#portfolio img {
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+    margin: 10px 0px;
+}
+
+.text-white{
+    color: white;
+}
+
+input, textarea{
+    margin: 10px;
+    padding: 5px;
+    width: 90%;
+}
+
+footer img{
+    margin: 10px;
+}
+
+/* loader */
+
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+#loader {
+    display: block;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    width: 150px;
+    height: 150px;
+    margin: -75px 0 0 -75px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #9370DB;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+#loader:before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #BA55D3;
+    -webkit-animation: spin 3s linear infinite;
+    animation: spin 3s linear infinite;
+}
+#loader:after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #FF00FF;
+    -webkit-animation: spin 1.5s linear infinite;
+    animation: spin 1.5s linear infinite;
+}
+@-webkit-keyframes spin {
+    0%   {
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+@keyframes spin {
+    0%   {
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+#loader-bg{
+    z-index: 5;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+}
+
+header
+{
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    background: linear-gradient(rgb(255, 255, 255), rgb(107, 107, 107));
+}
+
+li a{
+    text-align: center;
+    font-family:fantasy;
+    font-size:x-large;
+}
+
+.site-main
+{
+    background-color: rgb(0, 0, 0);
+
+}
+
+.title-text {
+
+    color: whitesmoke;
+font-family:cursive;
+}
+
+h2{
+    margin-bottom: 7vh;
+    font-size: 4vh;
+}
+
+h1{
+    font-size: 6vh;
+    font-weight: bolder;
+    color: blanchedalmond;
+}
+.paragraph
+{
+    font-size: 2vh 2vw;
+        font-family: fantasy;
+}
+
+h3{
+    font-size: 3vh;
+}
+
+#page-header
+{
+    margin-bottom: 20%;
+}
+
+th{
+   padding-left: 10vw;
+   font-size: 6vh ;
+   padding-bottom: 10vh;
+}
+
+#about-section h1
+{
+    color: black;
+}
+
+#contact-form h3
+{
+    color: blanchedalmond;
+}
+
+form .btn{
+    margin-top:10px;
+    margin-bottom: 30px;
+   margin-left: 30%;
+  }
+
+input,textarea
+{
+    background-color: rgb(245, 229, 209);
+    font-size:larger;
+    color: black;
+    font-weight: bold;
+    border-radius: 8px;
+}  
+
+.text-center p{
+    color: black;
+}
